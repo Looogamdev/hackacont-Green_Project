@@ -27,9 +27,11 @@
 }
 
 .texto {
+    margin-top: 20px;
     color: #ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 2rem;
     padding-top: 2rem;
 }
@@ -41,7 +43,7 @@
 .center_link {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 5px;
 }
 
 .link_cadastro {
