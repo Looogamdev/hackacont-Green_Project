@@ -25,7 +25,7 @@ function CadastroGerente() {
 
   return (
     <div className={style.container}>
-      <div>
+      <div className={style.container_1}>
         <Box
           className={style.box}
           sx={{
@@ -93,6 +93,7 @@ function CadastroGerente() {
               sx={{ mb: 3 }}
             />
             <Button
+              className={style.botton}
               type="submit"
               variant="contained"
               color="primary"

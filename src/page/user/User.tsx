@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { LoginData } from '../../interfaces/login.interface';
-import style from './LoginGerente.module.css'
+import style from './use.module.css'
 
-function Login() {
+function User() {
   const [loginData, setLoginData] = useState<LoginData>({
     nome: '',
     senha: '',
-    
   });
   
   const navigate = useNavigate();
@@ -39,7 +38,7 @@ function Login() {
       }}
     >
       <Typography variant="h5" component="h1" sx={{ mb: 3, textAlign: 'center' }}>
-        Login do Gerente
+        seja bem-vindo
       </Typography>
       <form onSubmit={handleSubmit}>
         <TextField
@@ -59,14 +58,6 @@ function Login() {
           onChange={handleChange}
           sx={{ mb: 2 }}
         />
-        <TextField
-          fullWidth
-          label="CNPJ"
-          name="cnpj"
-          value={loginData.cnpj}
-          onChange={handleChange}
-          sx={{ mb: 3 }}
-        />
         <Button className={style.botton}  type="submit" variant="contained" color="primary" fullWidth>
           Entrar
         </Button>
@@ -77,4 +68,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default User;
